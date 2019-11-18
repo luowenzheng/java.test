@@ -2,44 +2,44 @@ package wordCounts;
 		public class WordCounts { 
 		public static void main(String[] args) {
 			String a1[]=new String[420];
-	    	  String words= ( "ºº»ÊÖØÉ«Ë¼Çã¹úÓùÓî¶àÄêÇó²»µÃ"
-	        		+"Ñî¼ÒÓÐÅ®³õ³¤³ÉÑøÔÚÉî¹ëÈËÎ´Ê¶"
-	        		+"ÌìÉúÀöÖÊÄÑ×ÔÆúÒ»³¯Ñ¡ÔÚ¾ýÍõ²à"
-	        		+"»ØíøÒ»Ð¦°ÙÃÄÉúÁù¹¬·Û÷ìÎÞÑÕÉ«"
-	        		+"ÊÌ¶ù·öÆð½¿ÎÞÁ¦Ê¼ÊÇÐÂ³Ð¶÷ÔóÊ±"
-	        		+"ÔÆ÷Þ»¨ÑÕ½ð²½Ò¡Ü½ÈØÕÊÅ¯¶È´ºÏü"
-		            +"´ºÏü¿à¶ÌÈÕ¸ßÆð´Ó´Ë¾ýÍõ²»Ôç³¯"
-		            +"³Ð»¶ÊÌÑçÎÞÏÐÏ¾´º´Ó´ºÓÎÒ¹×¨Ò¹"
-		            +"ºó¹¬¼ÑÀöÈýÇ§ÈËÈýÇ§³è°®ÔÚÒ»Éí"
-		            +"½ðÎÝ×±³É½¿ÊÌÒ¹ÓñÂ¥Ñç°Õ×íºÍ´º"
-		        	+"æ¢ÃÃµÜÐÖ½ÔÁÐÍÁ¿ÉÁ¯¹â²ÊÉúÃÅ»§"
-		        	+"ËìÁîÌìÏÂ¸¸Ä¸ÐÄ²»ÖØÉúÄÐÖØÉúÅ®"
-		        	+"æê¹¬¸ß´¦ÈëÇàÔÆÏÉÀÖ·çÆ®´¦´¦ÎÅ"
-		        	+"»º¸èÂýÎèÄýË¿Öñ¾¡ÈÕ¾ýÍõ¿´²»×ã"
-		        	+"ÓæÑôÜ±¹Ä¶¯µØÀ´¾ªÆÆÄÞÉÑÓðÒÂÇú"
-		        	+"¾ÅÖØ³ÇãÚÑÌ³¾ÉúÇ§³ËÍòÆïÎ÷ÄÏÐÐ"
-	        		+"´ä»ªÒ¡Ò¡ÐÐ¸´Ö¹Î÷³ö¶¼ÃÅ°ÙÓàÀï"
-	        		+"Áù¾ü²»·¢ÎÞÄÎºÎÍð×ª¶êÃ¼ÂíÇ°ËÀ"
-	        		+"»¨îäÎ¯µØÎÞÈËÊÕ´äÇÌ½ðÈ¸ÓñÉ¦Í·"
-	        		+"¾ýÍõÑÚÃæ¾È²»µÃ»Ø¿´ÑªÀáÏàºÍÁ÷"
-	        		+"»Æ°£É¢Âþ·çÏôË÷ÔÆÕ»ÝÓæúµÇ½£¸ó"
-	        		+"¶ëáÒÉ½ÏÂÉÙÈËÐÐìºÆìÎÞ¹âÈÕÉ«±¡"
-	        		+"Êñ½­Ë®±ÌÊñÉ½ÇàÊ¥Ö÷³¯³¯ÄºÄºÇé"
-	        		+"ÐÐ¹¬¼ûÔÂÉËÐÄÉ«Ò¹ÓêÎÅÁå³¦¶ÏÉù"
-	        		+"ÌìÐýµØ×ª»ØÁúÔ¦µ½´Ë³ì³ù²»ÄÜÈ¥"
-	        		+"ÂíáÍÆÂÏÂÄàÍÁÖÐ²»¼ûÓñÑÕ¿ÕËÀ´¦" 
-	        		+"¾ý³¼Ïà¹Ë¾¡Õ´ÒÂ¶«Íû¶¼ÃÅÐÅÂí¹é"
-	        		+"Ü½ÈØÈçÃæÁøÈçÃ¼¶Ô´ËÈçºÎ²»Àá´¹"
-	        		+"´º·çÌÒÀî»¨¿ªÈÕÇïÓêÎàÍ©Ò¶ÂäÊ±"
-	        		+"Î÷¹¬ÄÏÄÚ¶àÇï²ÝÂäÒ¶Âú½×ºì²»É¨"
-	        		+"ÀæÔ°µÜ×Ó°×·¢ÐÂ½··¿°¢¼àÇà¶ðÀÏ"
-	        		+"Ï¦µîÓ©·ÉË¼ÇÄÈ»¹ÂµÆÌô¾¡Î´³ÉÃß"
-	        		+"³Ù³ÙÖÓ¹Ä³õ³¤Ò¹¹¢¹¢ÐÇºÓÓûÊïÌì"
-	        		+"Ô§ÑìÍßÀäËª»ªÖØôä´äôÀº®Ë­Óë¹²"
-	        		+"ÁÙÚöµÀÊ¿ºè¶¼¿ÍÄÜÒÔ¾«³ÏÖÂ»êÆÇ");
+	    	  String words= ( "æ±‰çš‡é‡è‰²æ€å€¾å›½å¾¡å®‡å¤šå¹´æ±‚ä¸å¾—"
+	        		+"æ¨å®¶æœ‰å¥³åˆé•¿æˆå…»åœ¨æ·±é—ºäººæœªè¯†"
+	        		+"å¤©ç”Ÿä¸½è´¨éš¾è‡ªå¼ƒä¸€æœé€‰åœ¨å›çŽ‹ä¾§"
+	        		+"å›žçœ¸ä¸€ç¬‘ç™¾åªšç”Ÿå…­å®«ç²‰é»›æ— é¢œè‰²"
+	        		+"ä¾å„¿æ‰¶èµ·å¨‡æ— åŠ›å§‹æ˜¯æ–°æ‰¿æ©æ³½æ—¶"
+	        		+"äº‘é¬“èŠ±é¢œé‡‘æ­¥æ‘‡èŠ™è“‰å¸æš–åº¦æ˜¥å®µ"
+		                +"æ˜¥å®µè‹¦çŸ­æ—¥é«˜èµ·ä»Žæ­¤å›çŽ‹ä¸æ—©æœ"
+		                +"æ‰¿æ¬¢ä¾å®´æ— é—²æš‡æ˜¥ä»Žæ˜¥æ¸¸å¤œä¸“å¤œ"
+		                +"åŽå®«ä½³ä¸½ä¸‰åƒäººä¸‰åƒå® çˆ±åœ¨ä¸€èº«"
+		                +"é‡‘å±‹å¦†æˆå¨‡ä¾å¤œçŽ‰æ¥¼å®´ç½¢é†‰å’Œæ˜¥"
+		        	+"å§Šå¦¹å¼Ÿå…„çš†åˆ—åœŸå¯æ€œå…‰å½©ç”Ÿé—¨æˆ·"
+		        	+"é‚ä»¤å¤©ä¸‹çˆ¶æ¯å¿ƒä¸é‡ç”Ÿç”·é‡ç”Ÿå¥³"
+		        	+"éªŠå®«é«˜å¤„å…¥é’äº‘ä»™ä¹é£Žé£˜å¤„å¤„é—»"
+		        	+"ç¼“æ­Œæ…¢èˆžå‡ä¸ç«¹å°½æ—¥å›çŽ‹çœ‹ä¸è¶³"
+		        	+"æ¸”é˜³é¼™é¼“åŠ¨åœ°æ¥æƒŠç ´éœ“è£³ç¾½è¡£æ›²"
+		        	+"ä¹é‡åŸŽé˜™çƒŸå°˜ç”Ÿåƒä¹˜ä¸‡éª‘è¥¿å—è¡Œ"
+	        		+"ç¿ åŽæ‘‡æ‘‡è¡Œå¤æ­¢è¥¿å‡ºéƒ½é—¨ç™¾ä½™é‡Œ"
+	        		+"å…­å†›ä¸å‘æ— å¥ˆä½•å®›è½¬è›¾çœ‰é©¬å‰æ­»"
+	        		+"èŠ±é’¿å§”åœ°æ— äººæ”¶ç¿ ç¿˜é‡‘é›€çŽ‰æ”å¤´"
+	        		+"å›çŽ‹æŽ©é¢æ•‘ä¸å¾—å›žçœ‹è¡€æ³ªç›¸å’Œæµ"
+	        		+"é»„åŸƒæ•£æ¼«é£Žè§ç´¢äº‘æ ˆè¦çº¡ç™»å‰‘é˜"
+	        		+"å³¨åµ‹å±±ä¸‹å°‘äººè¡Œæ—Œæ——æ— å…‰æ—¥è‰²è–„"
+	        		+"èœ€æ±Ÿæ°´ç¢§èœ€å±±é’åœ£ä¸»æœæœæš®æš®æƒ…"
+	        		+"è¡Œå®«è§æœˆä¼¤å¿ƒè‰²å¤œé›¨é—»é“ƒè‚ æ–­å£°"
+	        		+"å¤©æ—‹åœ°è½¬å›žé¾™é©­åˆ°æ­¤è¸Œèº‡ä¸èƒ½åŽ»"
+	        		+"é©¬åµ¬å¡ä¸‹æ³¥åœŸä¸­ä¸è§çŽ‰é¢œç©ºæ­»å¤„" 
+	        		+"å›è‡£ç›¸é¡¾å°½æ²¾è¡£ä¸œæœ›éƒ½é—¨ä¿¡é©¬å½’"
+	        		+"èŠ™è“‰å¦‚é¢æŸ³å¦‚çœ‰å¯¹æ­¤å¦‚ä½•ä¸æ³ªåž‚"
+	        		+"æ˜¥é£Žæ¡ƒæŽèŠ±å¼€æ—¥ç§‹é›¨æ¢§æ¡å¶è½æ—¶"
+	        		+"è¥¿å®«å—å†…å¤šç§‹è‰è½å¶æ»¡é˜¶çº¢ä¸æ‰«"
+	        		+"æ¢¨å›­å¼Ÿå­ç™½å‘æ–°æ¤’æˆ¿é˜¿ç›‘é’å¨¥è€"
+	        		+"å¤•æ®¿è¤é£žæ€æ‚„ç„¶å­¤ç¯æŒ‘å°½æœªæˆçœ "
+	        		+"è¿Ÿè¿Ÿé’Ÿé¼“åˆé•¿å¤œè€¿è€¿æ˜Ÿæ²³æ¬²æ›™å¤©"
+	        		+"é¸³é¸¯ç“¦å†·éœœåŽé‡ç¿¡ç¿ è¡¾å¯’è°ä¸Žå…±"
+	        		+"ä¸´é‚›é“å£«é¸¿éƒ½å®¢èƒ½ä»¥ç²¾è¯šè‡´é­‚é­„");
 		   String a="";
 	       int size=(words.length()%7==0)?(words.length()/7):(words.length()/7+1);
-	       if(words.length() <7 ) {                      // ÅÐ¶Ï×Ö·û´®µÄ³¤¶ÈÊÇ·ñ´óÓÚ7
+	       if(words.length() <7 ) {                      // åˆ¤æ–­å­—ç¬¦ä¸²çš„é•¿åº¦æ˜¯å¦å¤§äºŽ7
 	    	   a = words;
 	      }
 	    		   for(int i=0;i<size;i++){
@@ -51,13 +51,13 @@ package wordCounts;
 	    		   }
 	    		      System.out.println(a);
 	    		      int count=0;
-	  				  String str1="°®";        //ÊäÈëÒª²éÕÒµÄºº×Ö
+	  				  String str1="çˆ±";        //è¾“å…¥è¦æŸ¥æ‰¾çš„æ±‰å­—
 	  				  while(words.indexOf(str1)!=-1){
 	  					int c=words.indexOf(str1);
 	  					words=words.substring(c+str1.length());
 	  					count++;	
 	  				}
-	  			System.out.println("Êä³öÒª²éÕÒºº×ÖµÄ¸öÊýÎª:"+count);
+	  			System.out.println("è¾“å‡ºè¦æŸ¥æ‰¾æ±‰å­—çš„ä¸ªæ•°ä¸º:"+count);
 					 String count1 = null;
 	  				 try{ 
 						for(int i=0;i<450;i++)
@@ -65,10 +65,10 @@ package wordCounts;
 	  					System.out.println("count="+count1);
 	  				}
 	  					catch(ArrayIndexOutOfBoundsException e){
-	  						System.out.println("·¢ÉúÒì³£Ô­Òò£º"+e);
+	  						System.out.println("å‘ç”Ÿå¼‚å¸¸åŽŸå› ï¼š"+e);
 	  					}
 	  					finally{
-	  						System.out.println("³ÌÐòÔËÐÐ½áÊø£¡");
+	  						System.out.println("ç¨‹åºè¿è¡Œç»“æŸï¼");
 	  					}
 	  			}
 		
