@@ -1,0 +1,89 @@
+一.	实现目的
+分析学生选课系统使用GUI窗体及其组件设计窗体界面完成学生选课过程业务逻辑编程基于文件保存并读取数据处理异常
+
+二．实验要求
+1.	业务要求：
+(1).支持学生注册、课程新加、学生选课，打印学生选课列表等操作
+(2).基于事件模型对业务逻辑编程，实现在界面上支持上述操作
+(3).基于输入/输出编程，支持学生、课程、教师等数据的读写操作
+2.实验要求：
+      （1）设计GUI界面。
+      （2）编程事件模型，实现在界面上支持操作（诸如：开课，选课，退课，打印列表等操作）。
+      
+      
+      
+三．流程图                                           
+实验程序
+一．学生信息注册
+button.addActionListener(new ActionListener() public void actionPerformed(ActionEvent e) {	
+		char[] password1 = passwordField1.getPassword(); 
+                                 // 获得密码框1中的密码		
+	    char[] password2 = passwordField2.getPassword();    
+ // 获得密码框2中的密码		
+ boolean equals = Arrays.equals(password1, password2);
+// 判断两个密码框中密码是否相同	
+	if (equals) {     // 如果密码相同则提示注册成功		
+		    JOptionPane.showMessageDialog(null, "用户注册成	
+			 JOptionPane.INFORMATION_MESSAGE);}
+	else {           // 如果密码不同则提示密码不同		
+			 JOptionPane.showMessageDialog(null, "两次密码不同！
+			 JOptionPane.WARNING_MESSAGE);	
+				    }
+		   }
+ });
+  
+二．登录选课系统
+定义课程属性，课程序号和名称，地点，时间，分数等
+private String no[]= {"学生","老师"};
+		private String course[]= {
+"网页制作  9：45   地点：教103    星期一：余老师",""
++ "信息概论  7：50    地点：教104   星期三：崔老师",""				  + "组网技术  4：00   地点：教301   星期六：王老师",""
++ "专业英语  5：00   地点：教401   星期一：李老师",""					            
+			};	
+				
+2选择可供选择的课程
+ Object source=e.getSource();
+				if(source==jbAdd) {
+					Object selectedValues[]=jlist1.getSelectedValues();
+					for(int i=0;i<selectedValues.length;i++) {
+							dlm2.addElement(selectedValues[i]);
+							dlm1.removeElement(selectedValues[i]);
+				}
+			}
+3输出课程并打印选择的课程信息
+if(source==jbok) {
+	   if(!dlm2.isEmpty()) {
+		  jta.append(jcb.getSelectedItem()+"的课程信息：\n");
+			    for(int i=0;i<dlm2.getSize()-1;i++) {
+			       jta.append(dlm2.getElementAt(i)+",\n");
+						}
+
+4.	编写函数，实现学生的退课。
+if(source==jbRemove) {
+		Object selectedValues[]=Jlist2.getSelectedValues();
+	 for(int i=0;i<selectedValues.length;i++) {					 dlm1.addElement(selectedValues[i]);
+		  dlm2.removeElement(selectedValues[i]);
+				}
+
+			}
+//成功退课之后，课程的相关信息将会返回到可供选择的课程选项里
+
+
+5如果您没有选择课程直接确定系统将会提示您。
+jta.append(dlm2.getElementAt(dlm2.getSize()-1)+".\n");
+						jcb.removeItem(jcb.getSelectedItem());
+						dlm2.clear();	
+				}
+					else {
+						JOptionPane.showMessageDialog(null,
+							"您还没有设置课程！","错误提示！",
+						     JOptionPane.ERROR_MESSAGE);
+						}	
+五．程序运行的结果
+1学生的选课信息：
+
+
+五．实验编程感想。
+       
+  感觉自己虽然还差很多但是还是有一定的进步的，在这次的实验中也遇到了很多的问题，没有得到很好的解决，在今后的编程中还有很长的路要走，但希望自己能坚持住。
+
